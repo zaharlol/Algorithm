@@ -2,6 +2,7 @@
 {
     static void Main(string[] args)
     {
+        AdsUser user = new AdsUser();
         user.InUsers();
     }
 }
@@ -11,6 +12,7 @@ class User
     public string Name { get; set; }
     public bool IsPremium { get; set; }
 }
+class AdsUser : User
 {
     public void InUsers()
     {
